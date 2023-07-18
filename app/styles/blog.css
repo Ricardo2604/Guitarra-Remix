@@ -1,0 +1,78 @@
+.blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+@media(min-width: 768px){
+    .blog{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(min-width: 992px){
+    .blog{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+.post{
+    max-width: 80rem;
+    margin: 3rem auto 0 auto;
+
+}
+
+
+.post .contenido{
+    padding: 1.5rem;
+}
+
+.post .contenido h3{
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.post .resumen{
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4 ;
+    overflow : hidden;
+    font-size: 1.8rem;
+}
+.contenido .enlace{
+    margin-top: 2rem;
+    color: var(--white);
+    display: block;
+    background-color: var(--black);
+    border:.2rem solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 8px;
+    transition-property: background-color;
+    transition-duration: 300ms;
+
+}
+
+.contenido .enlace:hover{
+    background-color: var(--primary);
+}
+
+.post .fecha{
+    margin: 0;
+    font-size:  1.4rem;
+    color:var(--primary);
+}
+
+.post .texto{
+    white-space: pre-wrap;
+}
+
+.mt-3{
+    margin-top:3rem ;
+}
